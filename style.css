@@ -10,6 +10,10 @@ body
     color: #ededed;
     background:#130f50 ;
 }
+@media screen and (max-width: 600px)
+{    
+ 
+}
 .header
 {
     position: fixed;
@@ -315,16 +319,19 @@ section {
 }
 
 .progress-line.html span {
-    width: 90%;
+    width: 60%;
 }
 .progress-line.css span {
-    width: 70%;
+    width: 50%;
+}
+.progress-line.java span {
+    width: 80%;
 }
 .progress-line.python span {
     width: 70%;
 }
 .progress-line.js span {
-    width: 80%;
+    width: 40%;
 }
 .progress-line span::after {
     position: absolute;
@@ -339,16 +346,19 @@ section {
     opacity: 0;
 }
 .progress-line.html span::after {
-    content: "90%";
+    content: "60%";
 }
 .progress-line.css span::after {
-    content: "70%";
+    content: "50%";
+}
+.progress-line.java span::after {
+    content: "80%";
 }
 .progress-line.python span::after {
     content: "70%";
 }
 .progress-line.js span::after {
-    content: "80%";
+    content: "40%";
 }
 .progress-line span::before {
     content: "";
@@ -429,7 +439,7 @@ section {
 }
 @keyframes animate-path3 {
     100%{
-        stroke-dashoffset: 140;
+        stroke-dashoffset: 50;
     }
 }
 @keyframes animate-path4 {
